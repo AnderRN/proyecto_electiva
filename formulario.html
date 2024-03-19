@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+</head>
+<body>
+    <nav class="menu">
+        <ul class="menuitem">
+            <li><a class="point" href="menu.html">Inicio</a></li>
+            <li><a class="point" href="formulario.html">Registrarusuario</a></li>
+            <li><a class="point" href="vehiculo.html">Registrar Vehiculo</a></li>
+        </ul>
+    </nav>
+    <h2>REGISTRO DE USUARIO</h2>
+    <div class="container">
+        <div class="form-card">
+            <div class="form-header">
+                REGISTRO
+            </div>
+            <div class="form-body">
+                <form id="frmRegUsu" action="?controlador=usuario&accion=registrar" method="POST">
+                    <div class="form-group">
+                        <label for="nombres">NOMBRES</label>
+                        <input type="text" name="nombres" id="nombres">
+                    </div>
+                    <div class="form-group">
+                        <label for="p_apellido">P_APELLIDO</label>
+                        <input type="text" name="p_apellido" id="p_apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="s_apellido">S_APELLIDO</label>
+                        <input type="text" name="s_apellido" id="s_apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">TELEFONO</label>
+                        <input type="text" name="telefono" id="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">CORREO</label>
+                        <input type="email" name="correo" id="correo">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <input type="submit" class="btn-submit" name="aceptar" value="Aceptar">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

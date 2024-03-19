@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menuitem {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menuitem li {
+    margin-right: 20px;
+}
+
+.menuitem li:last-child {
+    margin-right: 0;
+}
+
+.menuitem li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.menuitem li a:hover {
+    color: #ffc107;
+}
